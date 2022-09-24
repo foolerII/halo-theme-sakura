@@ -9,7 +9,6 @@ const debug = require('debug')('sakura:vite')
 
 export function serveViteDev(vite: ViteDevServer): Middleware {
   const manifest = {}
-
   return async (ctx) => {
     const ssrContext = getSSRContext()
 
@@ -17,7 +16,6 @@ export function serveViteDev(vite: ViteDevServer): Middleware {
       const url = ctx.request.originalUrl
 
       debug('url: %s', url)
-
       // always read fresh template in dev
       let template = fs.readFileSync(path.resolve('index.html'), 'utf-8')
       template = await vite.transformIndexHtml(url, template)

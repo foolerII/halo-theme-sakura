@@ -95,6 +95,7 @@ function decodeResponseData(data: any) {
 
 async function get(path: string, data?: any = {}) {
   const { __body, ...other } = data;
+  console.log(`get ${path}`, JSON.stringify(data))
 
   const res = await configs.axios.get(path, { params: other, data: __body });
 

@@ -63,7 +63,7 @@ export default defineComponent({
   setup(props) {
     const isMobile = useMobile()
     const showHeader = ref(false)
-
+    // console.log(props)
     const vMenus = computed(() =>
       props.menus.map((menu) => {
         const url = /^\/s\//.test(menu.url)

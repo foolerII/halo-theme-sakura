@@ -12,6 +12,13 @@ import { i18n } from 'vite-i18n-plugin'
 import { NProgressPlugin, i18nPlugin } from './plugins'
 import { createSSRApp } from 'vue'
 
+// console.log(import.meta.env.DEV)
+// import.meta.env.MODE='development'
+// import.meta.env.DEV=true
+// Vue.config.devtools = true
+// Vue.config.devtools = true;
+
+
 export async function createApp(initialState: Record<string, any>) {
   const router = createRouter({
     history: isSSR ? createMemoryHistory() : createWebHistory(),

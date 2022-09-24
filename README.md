@@ -47,8 +47,8 @@ TODO
 项目中 `server` 文件夹添加 `.env` 文件
 
 ```ini
-HALO_ACCESS_KEY='xxx' # 替换成自己的 access key
-HALO_TARGET='https://blog.tiny-online.online' # 替换成自己的域名
+export HALO_ACCESS_KEY='4b2950cb75a8489681e882770322f5b9' # 替换成自己的 access key
+export HALO_TARGET='http://localhost:8090' # 替换成自己的域名
 ```
 
 ```sh
